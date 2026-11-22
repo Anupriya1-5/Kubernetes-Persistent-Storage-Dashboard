@@ -83,6 +83,3 @@ The PV reclaim policy is `Retain`; deleting the PVC does not automatically erase
 ```powershell
 docker exec microservices-worker rm -f /mnt/data/pv-data/records.json
 ```
-
-## Lab note
-This is a local Kind demonstration, not production storage. The local PV uses node affinity to pin the Pod to `microservices-worker`, because the data directory belongs to that node. Deleting and recreating the Pod does not delete the PVC or the PV data.
