@@ -1,4 +1,4 @@
-# Persistent Storage Dashboard — Kubernetes Problem 12
+# Persistent Storage Dashboard — Kubernetes 
 
 A Flask UI that saves records to `/data/records.json`. Kubernetes mounts a PVC at `/data`; the PVC binds to a local PV on the `microservices-worker` Kind node.
 
